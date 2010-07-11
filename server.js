@@ -1,6 +1,7 @@
 require.paths.unshift("node-code-blog");
 require("node-code-blog");
 
+
 config({ 
     root:       __dirname,
     theme:      'crwdg',
@@ -17,9 +18,12 @@ get('/license', function() {
     return fs.readFileSync( path.normalize( path.join( __dirname, 'LICENSE' )));
 });
 
-// GET "/fac"
-get("/faq", function(){
-    this.display("faq.html.ejs");
-});
 
+
+get('/contact', function() {
+       this.display('contact.html.ejs', {
+           name: 'brian'
+           email:'spam@ham.com'
+       });
+   });
 init();

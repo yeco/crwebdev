@@ -25,6 +25,10 @@ get("/acerca", function(){
     this.display("acerca.html.ejs");
 });
 
+// GET "/fag"
+get("/faq", function(){
+    this.display("faq.html.ejs");
+});
 
 
 // GET "/rss"
