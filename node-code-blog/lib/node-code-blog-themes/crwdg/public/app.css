@@ -14,6 +14,16 @@ h1 a {
     text-decoration:none;
     color:#333;
 }
+h2 {
+    font-size:14pt;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    letter-spacing: -1px;
+}
+
+h2 a {
+    text-decoration:none;
+    color:#4B4B4B;
+}
 
 pre {
     border:1px solid #5d6778;
