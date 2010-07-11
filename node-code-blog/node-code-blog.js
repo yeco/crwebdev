@@ -25,6 +25,11 @@ get("/acerca", function(){
     this.display("acerca.html.ejs");
 });
 
+// GET "/about"
+get("/faq", function(){
+    this.display("faq.html.ejs");
+});
+
 // GET "/rss"
 get("/rss", function(){
     this.response.headers['Content-Type'] = 'text/xml; charset=utf-8';
