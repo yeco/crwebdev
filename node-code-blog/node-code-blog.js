@@ -21,8 +21,8 @@ get("/", Post.paginate);
 get("/page/:n", Post.paginate);
 
 // GET "/about"
-get("/about", function(){
-    this.display("about.html.ejs");
+get("/acerca", function(){
+    this.display("acerca.html.ejs");
 });
 
 // GET "/rss"
@@ -36,17 +36,17 @@ get("/rss", function(){
 });
 
 // GET "/archive" - shows a summary of all posts by year/month
-get("/archive", function() {
-    this.display("archive.html.ejs");
+get("/archivo", function() {
+    this.display("archivo.html.ejs");
 });
 
 // GET "/archive/2010" - shows posts for year
-get("/archive/:year",function() {
+get("/archivo/:year",function() {
     return "no implemented" 
 });
 
 // GET "/archive/2010/10"
-get("/archive/:year/:month",function() {
+get("/archivo/:year/:month",function() {
     return "no implemented" 
 });
 
