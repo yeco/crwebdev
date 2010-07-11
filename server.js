@@ -3,7 +3,7 @@ require("node-code-blog");
 
 config({ 
     root:       __dirname,
-    theme:      'default',
+    theme:      'crwdg',
     title:      'Costa Rica Web Developers Group',
     domain:     'http://crwebdev.heroku.com/',
     desciption: 'Grupo de web developers de Costa Rica',
