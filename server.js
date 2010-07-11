@@ -1,10 +1,20 @@
+require.paths.unshift("node-code-blog");
+require("node-code-blog");
 
-// add the vendored express to the require path
-require.paths.unshift("vendor/express/lib")
+config({ 
+    root:       __dirname,
+    theme:      'default',
+    title:      'Costa Rica Web Developers Group',
+    domain:     'http://crwebdev.heroku.com/',
+    desciption: 'Grupo de web developers de Costa Rica',
+    analytics:  ''
+});
 
-// require express and its plugins
-require("express")
-require("express/plugins")
+// GET "/license" - diplays the WTFPL
+get('/license', function() {
+    var fs = require('fs')
+    ,   path = require('path');
+    return fs.readFileSync( path.normalize( path.join( __dirname, 'LICENSE' )));
+});
 
-//require the actual express app
-require ("./lib/app")
+init();
