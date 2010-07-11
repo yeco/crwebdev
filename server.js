@@ -17,4 +17,9 @@ get('/license', function() {
     return fs.readFileSync( path.normalize( path.join( __dirname, 'LICENSE' )));
 });
 
+// GET "/fac"
+get("/faq", function(){
+    this.display("faq.html.ejs");
+});
+
 init();
